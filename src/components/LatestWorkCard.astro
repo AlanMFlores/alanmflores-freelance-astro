@@ -1,0 +1,16 @@
+---
+
+const {imageUrl, webUrl, title, description, href} = Astro.props;
+---
+
+<div class="max-w-[360px]">
+    <figure class="mb-6">
+        <img src={imageUrl} alt="">
+    </figure>
+    <h3 class="font-semibold text-2xl mb-2">{title}</h3>
+    <p class="font-light mb-4">{description}</p>
+    <div class="flex gap-2 items-center">
+        <i class="fa-solid fa-paperclip"></i>
+        <a href={href} target="_blank" class="font-semibold text-mainColor">{webUrl}</a>
+    </div>
+</div>

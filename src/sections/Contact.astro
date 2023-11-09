@@ -1,0 +1,26 @@
+---
+import ContactButton from "../components/ContactButton.astro";
+
+---
+
+<section class="mx-32 mb-28">
+    <h2 class="text-3xl font-bold text-center mb-12">Contacto</h2>
+    <p class="font-light text-center mb-16">Si te interesa contar con alguno de mis servicios, te invito a hablar conmigo a través de algunos de los siguientes medios de contacto o bien, enviarme tu consulta a través del siguiente formulario</p>
+    <form action="" class="flex flex-col gap-4 max-w-lg m-auto">
+        <input class="px-4 py-2 bg-lightColor placeholder:text-[#464444] placeholder:font-light" type="text" name="" id="" placeholder="Nombre">
+        <input class="px-4 py-2 bg-lightColor placeholder:text-[#464444] placeholder:font-light" type="email" name="" id="" placeholder="Correo Electrónico">
+        <input class="px-4 py-2 bg-lightColor placeholder:text-[#464444] placeholder:font-light" type="text" name="" id="" placeholder="Asunto">
+        <textarea name="" id="" class="resize-none px-4 py-2 bg-lightColor placeholder:text-[#464444] placeholder:font-light" placeholder="Tu consulta...">
+        </textarea>
+        <input type="submit" value="Enviar Consulta" class="text-white text-center font-semibold px-8 py-2 duration-300 bg-mainColor hover:bg-mainColorDark cursor-pointer">
+    </form>
+    <div class="flex items-center justify-center max-w-lg m-auto gap-4 my-12">
+        <span class="border-[0.5px] border-[#BBBBBB] w-full"></span>
+        <p>o</p>
+        <span class="border-[0.5px] border-[#BBBBBB] w-full"></span>
+    </div>
+    <div class="flex justify-center gap-4">
+        <ContactButton title="Enviar WhatsApp" option="fa-brands fa-whatsapp"/>
+        <ContactButton title="Enviar Mail" option="fa-regular fa-envelope"/>
+    </div>
+</section>

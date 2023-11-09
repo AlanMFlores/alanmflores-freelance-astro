@@ -1,0 +1,13 @@
+---
+
+const {title, review} = Astro.props;
+
+---
+
+<div class="flex flex-col gap-5 p-8 bg-lightColor">
+    <figure class="flex justify-center">
+        <img src="/public/icons/five-stars.svg" alt="">
+    </figure>
+    <p>{review}</p>
+    <p class="font-semibold text-right text-xl">{title}</p>
+</div>

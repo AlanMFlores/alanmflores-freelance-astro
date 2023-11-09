@@ -1,0 +1,29 @@
+---
+import ActionButton from "./ActionButton.astro";
+import Link from "./Link.astro";
+---
+
+<header class="flex items-center justify-between px-32 pt-16 pb-12">
+    <figure >
+        <img src="./public/images/alanmflores-logo.svg" alt="alanmflores logo" class="w-48">
+    </figure>
+    <nav>
+        <ul class="flex gap-4">
+            <li>
+                <Link href={'/'} title={'Inicio'}/>
+            </li>
+            <li>
+                <Link href={'/'} title={'Sobre Mí'}/>
+            </li>
+            <li> 
+                <Link href={'/'} title={'Servicios'}/>
+            </li>
+            <li>
+                <Link href={'/'} title={'Planes'}/>
+            </li>
+            <li>
+                <ActionButton href="/" title="Contacto"/>
+            </li>
+        </ul>
+    </nav>
+</header>

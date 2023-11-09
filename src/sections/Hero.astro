@@ -1,0 +1,31 @@
+---
+import Header from "../components/Header.astro";
+import Link from "../components/Link.astro";
+import ActionButton from "../components/ActionButton.astro";
+
+---
+
+<section class="h-screen mb-28">
+    <Header/>
+    <div class="h-[60vh] flex flex-col gap-12 items-center justify-center mb-8">
+        <h3 class="uppercase font-extralight tracking-widest text-white text-xl">Tu sitio web profesional</h3>
+        <h1 class="text-3xl text-white text-center font-semibold w-96">
+            Asegurá tu presencia online con una web de <span class="text-mainColor font-bold">calidad</span>.
+        </h1>
+        <div class="flex">
+            <ActionButton href={'/'} title="Ver Planes"/>
+            <Link href={'/'} title="Contacto"/>
+        </div>
+    </div>
+    <div class="w-full flex justify-center">
+        <a href="#">
+            <img src="/public/images/chevron-down.svg" alt="">
+        </a>
+    </div>
+</section>
+
+<style>
+    section {
+        background: radial-gradient(50% 50% at 50% 50%, #1E1E1E 0%, #171717 100%);
+    }
+</style>

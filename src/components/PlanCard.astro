@@ -1,0 +1,42 @@
+---
+import ActionButton from "./ActionButton.astro";
+const {title} = Astro.props;
+
+---
+
+<div class=" flex flex-col gap-4 p-8 bg-white max-w-[306px] rounded-lg shadow-lg">
+    <h3 class="font-semibold text-mainColor text-xl">{title}</h3>
+    <h4 class="font-semibold text-2xl">Consultar</h4>
+    <p class="font-light">Ideal para emprendedores o negocios que necesitan presencia online.</p>
+    <ul class="flex flex-col gap-4">
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Diseño de una página</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Certificado SSL</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Diseño personalizado</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Enlaces a redes sociales</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Botón de Whatsapp</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Optimización de rendimiento</p>
+        </li>
+        <li class="flex gap-2">
+            <span class="text-mainColor"><i class="fa-solid fa-circle-check"></i></span>
+            <p>Diseño Responsive</p>
+        </li>
+    </ul>
+    <ActionButton href="#" title="Solicitar Servicio"/>
+</div>
